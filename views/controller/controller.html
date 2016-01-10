@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>控制器实例</title>
+    <script src="../../lib/angular-1.4.8/angular.js"></script>
+</head>
+<body>
+<!--ng-app：模块名-->
+<!--ng-controller:该模块下的控制器名-->
+<div ng-app="myApp" ng-controller="myCtrl">
+
+    名: <input type="text" ng-model="firstName"><br>
+    姓: <input type="text" ng-model="lastName"><br>
+    <br>
+    姓名: {{firstName + " " + lastName}}
+</div>
+    <script src="../../scripts/controller/controller.js"></script>
+</body>
+</html>

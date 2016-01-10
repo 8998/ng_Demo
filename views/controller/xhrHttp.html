@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>xhr-$http实例</title>
+    <script src="../../lib/angular-1.4.8/angular.js"></script>
+</head>
+<body>
+    <div ng-app="xhrHttp" ng-controller="getData">
+        <ul>
+            <li ng-repeat="x in items">
+                <p>{{x.title}}</p>
+                <p>{{x.count}}</p>
+                <p>{{x.lastuptim}}</p>
+                <img src={{x.img}}>
+                <a href="{{x.url}}"></a>
+            </li>
+        </ul>
+    </div>
+    <script src="../../scripts/xhr_http/xhr_http.js"></script>
+</body>
+</html>
